@@ -25,16 +25,6 @@ export default function PokemonDetailPage({ params }) {
     )
   }
 
-  // Function to render abilities
-  const renderAbilities = (abilities) => {
-    return abilities.map((abilityItem) => (
-      <li key={abilityItem.ability.name} className="capitalize">
-        {abilityItem.ability.name} (Hidden:{' '}
-        {abilityItem.is_hidden ? 'Yes' : 'No'})
-      </li>
-    ))
-  }
-
   return (
     <div className="container mx-auto p-4">
       <div className="bg-white shadow overflow-hidden sm:rounded-lg">
